@@ -19,11 +19,13 @@
 //= require hacksi_web_app
 //= require_tree .
 
+// window.onload = addMerdianImg;
+
 function addOurMerdianImg() {
   var x = document.createElement("IMG");
-  x.setAttribute("src", "https://github.com/jkolecr/HackSi_2018/blob/master/IMG_20181103_193819.jpg");
-  x.setAttribute("width", "1000");
-  x.setAttribute("height", "800");
+  x.setAttribute("src", "assets/IMG_20181103_193819.jpg");
+  x.setAttribute("width", "900");
+  x.setAttribute("height", "600");
   x.setAttribute("alt", "Our Merdian Img");
   document.body.appendChild(x);
 }
@@ -31,8 +33,8 @@ function addOurMerdianImg() {
 function addMerdianImg() {
   var x = document.createElement("IMG");
   x.setAttribute("src", "https://survivinskyrim.files.wordpress.com/2015/11/morc16-8.jpg");
-  x.setAttribute("width", "1000");
-  x.setAttribute("height", "700");
+  x.setAttribute("width", "30%");
+  x.setAttribute("height", "10%");
   x.setAttribute("alt", "Merdian Img");
   document.body.appendChild(x);
 }

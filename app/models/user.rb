@@ -23,6 +23,6 @@ class User < ApplicationRecord
   private
 
     def phone_length
-      errors.add(:phone, 'Phone # length must be 10 ex. 9998887777') if self.phone.length != 10
+      errors.add(:phone, '# length must be 10 ex. 9998887777') if self.phone.length != 10
     end
 end
