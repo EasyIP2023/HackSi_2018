@@ -6,7 +6,7 @@ class HomeController < ApplicationController
   def index
     if params['beacon']
       Thread.new { HomeMailer.touch_email(params['beacon']).deliver_now }
-      Thread.new { Home.send_text(User.active, params['beacon']) }
+      Thread.new { Home.send_text(params['beacon']) }
       respond_to do |format|
         format.html {}
         format.js { render js: "addOurMerdianImg();" }
